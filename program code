@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class myprograms 
+{
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your name:");
+        String name = scanner.nextLine();
+
+        System.out.println("enter your age : ");
+        int age = scanner.nextInt();
+
+        System.out.println("enter your favorite subject:");
+        String subject = scanner.next();
+        scanner.nextLine();
+
+        System.out.println("Enter your GPA: ");
+        double GPA = scanner.nextDouble();
+
+        System.out.println("did you fail? (true/false)");
+        boolean isFail = scanner.nextBoolean();
+
+        System.out.println("Hello " + name + " !");
+        System.out.println("you are " + age + " years old !");
+        System.out.println("your favourite subject is: " + subject);
+        System.out.println("your GPA is: " + GPA);
+
+        if (isFail)
+        {
+            System.out.println("you failed");
+        }
+        else
+        {
+            System.out.println("you passed");
+          
+        }
+        
+
+        scanner.close();
+    }
+
+}
